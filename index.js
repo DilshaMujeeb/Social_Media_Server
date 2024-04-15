@@ -10,6 +10,7 @@ import PostRoute from "./Routes/PostRoute.js";
 import uploadRoute from "./Routes/UploadRoute.js";
 import ChatRoute from "./Routes/ChatRoute.js"
 import MessageRoute from "./Routes/MessageRoute.js"
+import CommentRoute from "./Routes/CommentRoute.js"
 const app = express();
 // to serve images to public
 app.use(express.static('public'))
@@ -42,5 +43,6 @@ app.use("/user", UserRoute);
 app.use("/post", PostRoute);
 app.use("/upload", uploadRoute);
 app.use("/chat", ChatRoute);
-app.use('/message',MessageRoute)
+app.use('/message', MessageRoute)
+app.use('/comment',CommentRoute)
 export default app;
