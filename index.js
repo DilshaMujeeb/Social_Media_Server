@@ -42,6 +42,7 @@ app.use("/auth", AuthRoute);
 app.use("/user", UserRoute);
 app.use("/post", PostRoute);
 app.use("/upload", uploadRoute);
+
 app.use("/chat", ChatRoute);
 app.use('/message', MessageRoute)
 app.use('/comment',CommentRoute)
